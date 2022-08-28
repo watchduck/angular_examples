@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: #dcd1c6;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.repeated {
+  background-color: lightseagreen;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}

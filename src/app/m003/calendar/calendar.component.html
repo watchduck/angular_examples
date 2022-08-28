@@ -1,0 +1,19 @@
+<div class="calendar">
+
+  <div *ngFor="let entry of entries; let entryIndex = index" class="calendar-entry-wrapper">
+
+    <h2>{{entry.name}}</h2>
+
+    <app-time-picker #loopTimePicker
+                     [timeString]="entry.timeString"
+                     (changeEvent)="onChangeEvent($event, entryIndex)"
+    ></app-time-picker>
+
+    <div class="row">
+      <button (click)="loopTimePicker.reset()">reset</button>
+      {{entry.timeString}}
+    </div>
+
+  </div>
+
+</div>

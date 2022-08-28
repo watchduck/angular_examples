@@ -1,0 +1,40 @@
+<h1>structural directive (repeater)</h1>
+
+
+
+<h2>repeat text</h2>
+
+<input type="number" [(ngModel)]="repeatTimesFirst">
+
+<p>Abbreviated form <code>&lt;span *appRepeater="n"&gt;</code></p>
+
+<div class="wrapper">
+  <span class="repeated" *appRepeater="repeatTimesFirst">
+    Lorem <i>ipsum</i> dolor <code>sit</code> amet.
+  </span>
+</div>
+
+<p>Long form <code>&lt;ng-template [appRepeater]="n"&gt;</code></p>
+
+<div class="wrapper">
+  <ng-template [appRepeater]="repeatTimesFirst">
+    <span class="repeated">
+      Lorem <i>ipsum</i> dolor <code>sit</code> amet.
+    </span>
+  </ng-template>
+</div>
+
+
+
+<h2>repeat component</h2>
+
+<p>
+  Clicking on a mood component will change its value.<br>
+  Changing the repeat number will create new mood components &mdash; all with the initial value.
+</p>
+
+<input type="number" [(ngModel)]="repeatTimesSecond">
+
+<div class="wrapper">
+  <app-mood *appRepeater="repeatTimesSecond" [index]="0"></app-mood>
+</div>

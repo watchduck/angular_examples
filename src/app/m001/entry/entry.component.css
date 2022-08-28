@@ -1,0 +1,16 @@
+div {
+  background-color: #dcd1c6;
+  padding: 10px;
+  margin: 10px;
+}
+
+h3 {
+  margin: 0;
+  border: none;
+  color: green;
+}
+
+p {
+  margin: 10px 0 0;
+  color: brown;
+}

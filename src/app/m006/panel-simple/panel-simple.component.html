@@ -1,0 +1,12 @@
+<div class="panel">
+
+  <div class="header" (click)="toggle()">
+    <span class="title">{{title}}</span>
+    <span class="arrow">{{ open ?  '&#9660;' : '&#9668;'}}</span>  <!-- down and left pointing triangle -->
+  </div>
+
+  <div class="body" *ngIf="open">
+    <ng-content></ng-content>
+  </div>
+
+</div>

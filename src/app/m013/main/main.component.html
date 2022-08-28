@@ -1,0 +1,71 @@
+<app-doc [section]="'intro'"></app-doc>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'default1'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+  IGNORED <ng-template> IGNORED </ng-template>
+</app-blog-list>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'default2-with-addition'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+
+  <ng-template #additionTemplate>
+    <div id="beige-entry-count"> There are {{listEntries.length}} entries. </div>
+  </ng-template>
+
+</app-blog-list>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom1-minimal'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+
+  <ng-template #customTemplate> ENTRY </ng-template>
+
+</app-blog-list>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom2'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+
+  <ng-template let-entry #customTemplate>
+    <span class="blue-blog-entry">{{entry.title}}</span>
+  </ng-template>
+
+  <ng-template #additionTemplate>
+    <span id="blue-entry-count">There are {{listEntries.length}} entries.</span>
+  </ng-template>
+
+</app-blog-list>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom3-fail'"></app-doc>
+
+<app-blog-list [entries]="listEntries">
+
+  <ng-template let-entry #customTemplate>
+    <tr class="orphan-row">
+      <td>{{entry.title}}</td>
+      <td>{{entry.text}}</td>
+    </tr>
+  </ng-template>
+
+</app-blog-list>

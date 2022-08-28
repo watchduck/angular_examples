@@ -1,0 +1,15 @@
+<h2>
+
+  <a *ngIf="number > 0" href="/#/{{number}}">{{number}}</a>
+  <a *ngIf="number == 0">&nbsp;</a>
+
+  <span class="title" *ngIf="hasHeader">
+    <ng-content select="dash-header"></ng-content>
+  </span>
+  <span class="dummy-title" *ngIf="!hasHeader()">GIVE ME A HEADER!</span>
+
+</h2>
+
+<div class="text-body">
+  <ng-content></ng-content>
+</div>

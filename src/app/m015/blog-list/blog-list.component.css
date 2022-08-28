@@ -1,0 +1,31 @@
+.blog-list-wrapper {
+  border: 3px solid pink;
+  padding: 5px 15px
+}
+
+.blog-list {
+  background-color: lightgoldenrodyellow;
+  padding: 15px;
+}
+
+.blog-list-custom {
+  background-color: lightcyan;
+  padding: 15px;
+}
+
+.hint {
+  opacity: .5;
+  font-size: 80%;
+}
+
+::ng-deep b.custom-title {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+::ng-deep span.custom-text {
+  color: blue;
+  margin: 10px;
+  line-height: 30px;
+}

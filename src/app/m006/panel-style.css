@@ -1,0 +1,44 @@
+.panel {
+  background-color: #c9e4c9;
+  border: 1px solid #1e421e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom: -1px;
+}
+
+.header {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #4ca64c;
+  cursor: pointer;
+}
+
+.header {
+  font-weight: 700;
+}
+
+.arrow {
+  color: #1e421e;
+  position: absolute;
+  right: 10px;
+}
+
+.body {
+  margin: 10px
+}
+
+.footer {
+  margin: 5px;
+  font-size: 85%;
+  padding: 5px;
+  border: 1px solid #705555;
+  color: #705555;
+  background-color: #dcd1c6;
+  border-radius: 2px;
+}
+
+span.title {
+  padding: 1px 8px;
+  border: 1px solid orange;
+}

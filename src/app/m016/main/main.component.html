@@ -1,0 +1,33 @@
+<app-doc [section]="'intro'"></app-doc>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'direct'"></app-doc>
+
+<app-circle></app-circle>
+<app-circle [color]="'red'"></app-circle>
+<app-circle [color]="'orange'"></app-circle>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'container'"></app-doc>
+
+<div #containerDiv></div>
+<br>
+<button (click)="switchFirst()">switch first</button>
+<button (click)="removeLast()">remove last</button>
+<button (click)="cycleLeft()">cycle left</button>
+
+
+<!--####################################################################-->
+<app-doc [section]="'toggle'"></app-doc>
+
+<div class="shape-wrapper" (click)="toggleShape()">
+  <div *ngComponentOutlet="shapeComponent" ></div>
+</div>
+
+<div class="shape-wrapper" (click)="toggleShape()">
+  <ng-template [ngComponentOutlet]="shapeComponent"></ng-template>
+</div>

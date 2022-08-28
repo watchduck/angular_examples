@@ -1,0 +1,37 @@
+.blog-form-wrapper {
+  border: 3px solid #d4c5e7;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+.hint {
+  opacity: .5;
+  font-size: 80%;
+}
+
+table {
+  border: 3px solid goldenrod;
+  margin: 15px 0;
+  color: green;
+}
+th, td {
+  padding: 3px 8px;
+}
+tr:first-child th, tr:first-child td {
+  padding-top: 10px;
+}
+input, textarea {
+  width: 500px;
+  margin: 0;
+}
+
+td.button-cell {
+  padding: 10px 200px;
+}
+button {
+  width: 100%;
+  margin: 0;
+  color: green;
+  border: 1px solid green;
+  background-color: #e5f2e5;
+}

@@ -1,0 +1,21 @@
+.calendar {
+  background-color: beige;
+  padding: 30px;
+}
+
+.calendar-entry-wrapper {
+  border: 4px solid burlywood;
+  padding: 5px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.calendar-entry-wrapper > h2 {
+  border: none;
+  color: #c7a579;
+  margin: 0 0 10px;
+}
+
+.row {
+  display: block;
+  clear: both;
+}

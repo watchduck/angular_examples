@@ -1,0 +1,54 @@
+ul.inventory {
+  display: inline-block;
+  margin: 1px 0 5px 15px;
+}
+
+ul.inventory li {
+  font-family: monospace;
+  user-select: all;
+  display: inline;
+  float: left;
+  list-style: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 4px;
+  margin: 0 10px 5px 0;
+  font-size: 90%;
+}
+
+ul.inventory li small {
+  font-family: serif;
+  font-size: 80%;
+}
+
+ul.inventory li.problem {
+  font-family: serif;
+  border-color: black;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 80%;
+}
+
+/* inventory background colors */
+
+ul.inventory li.children {
+  background-color: pink;
+}
+
+ul.inventory li.lifecycle-hook {
+  background-color: #ffd27f;
+}
+
+ul.inventory li.ref {
+  background-color: #99ea99;
+}
+
+ul.inventory li.model {
+  background-color: beige;
+}
+
+img#app-icon {position: absolute; right: 30px; top: 60px; width: 80px;}
+
+a#github-link {position: absolute; right: 44px; top: 150px;}
+a#github-link img {width: 40px;}

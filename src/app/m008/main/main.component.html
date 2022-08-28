@@ -1,0 +1,29 @@
+<h1>content insertion: tabs</h1>
+
+
+<p>
+  Here the container is a component (stack around cards).
+  <span class="light">In the <a href="/#/7">last branch</a> a directive is used (accordion around panels).</span>
+</p>
+
+
+<app-tab-stack>
+
+  <app-tab-card title="some component">
+    <app-snurf [snurfling]="5"></app-snurf>
+  </app-tab-card>
+
+  <app-tab-card title="<i>nested</i> tabs">
+
+    <app-tab-stack>
+      <app-tab-card title="Foo">
+        Foooo.
+      </app-tab-card>
+      <app-tab-card title="Bar">
+        Baaar.
+      </app-tab-card>
+    </app-tab-stack>
+
+  </app-tab-card>
+
+</app-tab-stack>

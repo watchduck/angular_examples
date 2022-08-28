@@ -1,0 +1,63 @@
+<div *ngIf="section == 'intro'">
+  <h1><code>TemplateRef</code> and <code>ngTemplateOutlet</code>: blog (static)</h1>
+  <p>
+    This app shows static blog entries. &nbsp;
+    <span class="light">(<a href="15">Branch 15</a> is the same with a form to add new entries.)</span>
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'default1'">
+  <h2>default</h2>
+  <p>
+    To show the default content, <code>app-blog-list</code> should be empty.
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'default2-with-addition'">
+  <h2>default with addition</h2>
+  <p>
+    <code>app-blog-list</code> contains <code>ng-template #additionTemplate</code>.<br>
+    Its content <code>addition</code> of type <code>TemplateRef&lt;any&gt;</code> is bound to <code>ngTemplateOutlet</code>.<br>
+    <span class="light">
+      It is styled with <code>::ng-deep</code> in <span class="place">blog-list.component.css</span>.
+      (Same in the following examples.)
+    </span>
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'custom1-minimal'">
+  <h2>custom minimal</h2>
+  <p>
+    <code>app-blog-list</code> contains <code>ng-template #customTemplate</code>.<br>
+    Its minimal content is shown once for each blog entry.
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'custom2'">
+  <h2>custom</h2>
+  <p>
+    Like the last example, but here the count variable <code>entry</code> is defined using <code>let-entry</code>,
+    so <code ngNonBindable>{{entry.title}}</code> can be used in the content.
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'custom3-fail'">
+  <h2>custom fail</h2>
+  <p class="problem">
+    The custom template uses table rows. But they would require a <code>table</code>
+    in place of the <code>div.blog-list-custom</code>.<br>
+    The <a href="14">next</a> branch shows an attempt to solve this with <code>ng-container</code>,
+    but that does not work either.<br>
+    Another problem is, that the addition can not be shown below the table.
+  </p>
+</div>

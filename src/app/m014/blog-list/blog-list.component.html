@@ -1,0 +1,9 @@
+<ng-container *ngIf="!custom">
+  <div class="blog-list">
+    <app-blog-entry [entry]="entry" *ngFor="let entry of entries"></app-blog-entry>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="custom">
+  <ng-template ngFor [ngForOf]="entries" [ngForTemplate]="custom"></ng-template>
+</ng-container>

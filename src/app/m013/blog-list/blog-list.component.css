@@ -1,0 +1,45 @@
+.blog-list-wrapper {
+  border: 3px solid pink;
+  padding: 5px 15px
+}
+
+.blog-list {
+  background-color: lightgoldenrodyellow;
+  padding: 15px;
+}
+
+.blog-list-custom {
+  background-color: lightcyan;
+  padding: 15px;
+}
+
+.hint {opacity: .5; font-size: 80%;}
+
+::ng-deep #beige-entry-count{
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+::ng-deep span.blue-blog-entry {
+  margin-right: 50px;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+::ng-deep #blue-entry-count {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+::ng-deep tr.orphan-row td {
+  border: 1px solid blue;
+  padding: 5px;
+}

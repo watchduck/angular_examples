@@ -1,0 +1,27 @@
+<h1>contact list <small>(with too many checks)</small></h1>
+
+<p>
+  Every change causes a check of all entries (as can be seen in the console).<br>
+  <span class="light">In the <a href="/#/20">next branch</a> this problem is solved.</span>
+</p>
+
+<app-list [contacts]="contacts"
+          (onSelect)="selectContact2($event)"
+></app-list>
+
+<br>
+
+<form>
+
+  <label>name:</label>
+  <input type="text" name="something" [(ngModel)]="contactName">
+  <span class="input-text">{{contactName}}</span><br>
+
+  <label>address:</label>
+  <input type="text" name="whatever" [(ngModel)]="contactAddress">
+  <span class="input-text">{{contactAddress}}</span><br>
+
+  <button (click)="updateSelectedContact()">update selected</button>
+  <button (click)="createContact()">create new</button>
+
+</form>

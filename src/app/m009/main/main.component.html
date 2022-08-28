@@ -1,0 +1,40 @@
+<h1 (click)="clickThick = clickThick + 1" [appBorder]="clickThick">
+  border directive
+</h1>
+
+<p>
+  The directive <code>appBorder</code> adds four styles, including a red border of dynamic thickness, and green text.
+</p>
+
+<p>
+  Clicking on the headline will increase its border thickness, which is currently {{clickThick}}.
+
+  <button (click)="clickThick = 0" [disabled]="clickThick == 0">
+    Click here to reset it.
+  </button>
+</p>
+
+<p>
+  <span [appBorder]="2">This</span> border has a static thickness. So has the following <code>snurf</code> component:
+</p>
+
+<app-snurf [snurfling]="10" [appBorder]="2"></app-snurf>
+
+<p>
+  This one has the same as the heading:<br>
+</p>
+
+<app-snurf [snurfling]="20" [appBorder]="clickThick"></app-snurf>
+
+
+<p>
+  The contained <code>div</code> inherits <code>color</code> and <code>display</code>,
+  but not <code>border</code> and <code>padding</code>.<br>
+  <span class="light">(Without also adding <code>display: inline-block</code>, the border would not form a rectangle.)</span>
+</p>
+
+<p>
+  For comparison, this is the <code>snurf</code> component without the <code>appBorder</code> directive:
+</p>
+
+<app-snurf [snurfling]="30"></app-snurf>

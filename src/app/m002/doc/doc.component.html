@@ -1,0 +1,65 @@
+<div *ngIf="section == 'intro'">
+  <h1>number input and variable</h1>
+</div>
+
+
+
+<div *ngIf="section == 'a'">
+  <h2>a</h2>
+  <p>
+    Input of type <code>number</code>,
+    thus up and down arrows increment and decrement.<br>
+    <code>keydown.i</code> is bound to increment, <code>keyup.r</code> to reset.<br>
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'b'">
+  <h2>b</h2>
+  <p>
+    Input of default type <code>text</code>.<br>
+    Up and down arrow keys are bound to increment and decrement.
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'c'">
+  <h2>c</h2>
+  <p>
+    Two way binding with <code>[(ngModel)]</code>.
+  </p>
+  <p class="light">
+    Text input makes the variable disappear (rather than showing NaN or 0).<br>
+  </p>
+</div>
+
+
+<div *ngIf="section == 'd'">
+  <h2>d</h2>
+  <p>
+    The arrow keys are bound to moving the focus.<br>
+    <kbd>arrowUp</kbd> also increments (default behaviour),
+    but <kbd>arrowDown</kbd> is kept from decrementing by <code>preventDefault</code>.
+  </p>
+  <p class="problem">
+    The variable (seen right to the input) changes only when the input is changed by typing or (mouse) clicking on the arrows.<br>
+    It does not on pressing <kbd>arrowUp</kbd>, although the number in the input increases.
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'e'">
+  <h2>e</h2>
+  <p>
+    Two way binding with <code>[ngModel]</code> and <code>(ngModelChange)</code>.<br>
+  </p>
+  <p>
+    <kbd>Ctrl</kbd>+<kbd>arrowUp</kbd> will move the focus.
+    <span class="problem">Again, this increases the number in the input, but not the variable.</span>
+  </p>
+</div>
+
+

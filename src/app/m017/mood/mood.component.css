@@ -1,0 +1,20 @@
+div {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.happy {
+  background-color: white;
+  color: black;
+}
+.sad {
+  background-color: black;
+  color: white;
+}
+.angry {
+  background-color: red;
+  color: black;
+}

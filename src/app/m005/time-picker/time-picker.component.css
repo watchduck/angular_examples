@@ -1,0 +1,49 @@
+input {
+  font-size: 20px;
+  border-width: 0px;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.col {
+  width: 50px;
+  float: left;
+  margin: 0px 10px;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  padding: 11px 22px 9px 22px;
+  border: 1px solid darkred;
+  margin: auto;
+  background-color: rgba(128, 128, 128, .25);
+  border-radius: 5px;
+}
+
+.container {
+  background-color: lightcoral;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 232px;
+  top: 27px;
+  left: 0px;
+}
+
+.part {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.big-part {
+  margin-top: 8px;
+}
+
+button.reset {
+  margin-top: 15px;
+}

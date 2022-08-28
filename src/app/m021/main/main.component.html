@@ -1,0 +1,25 @@
+<h1>log viewer</h1>
+
+<p>
+  The logs array is appended every half second with the current time and log count.<br>
+  But in the log component it is refreshed only every 2.5 seconds &mdash;
+  and only if auto refresh is on.
+</p>
+<p class="problem">
+  <code>autoRefresh</code> is used in the template to show <i>on</i> or <i>off</i> in the sentence,
+  and to disable the buttons.<br>
+  But it works only outside of the component (above the green box).
+</p>
+
+<button (click)="viewer.refresh()" class="refresh">refresh</button>
+<button (click)="viewer.start()" [disabled]="viewer.autoRefresh">start</button>
+<button (click)="viewer.stop()" [disabled]="!viewer.autoRefresh">stop</button>
+<span>
+  Auto refresh is
+  <ng-container [ngSwitch]="viewer.autoRefresh">
+    <ng-container *ngSwitchCase="true">on</ng-container>
+    <ng-container *ngSwitchCase="false">off</ng-container>
+  </ng-container>.
+</span>
+
+<app-log #viewer [logs]="logs"></app-log>

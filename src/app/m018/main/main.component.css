@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+}
+
+th {
+  border: 1px solid gray;
+  color: gray;
+  width: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+td {
+  border: 1px solid lightgray;
+  padding: 3px;
+}
+
+td.middle {
+  width: 30px;
+}
+
+td.left {
+  text-align: right;
+}
+
+b.color {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}

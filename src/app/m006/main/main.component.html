@@ -1,0 +1,67 @@
+<h1>content insertion: panels <small>(but no accordion)</small></h1>
+
+<p>
+  <span class="light">In the <a href="/#/7">next branch</a> the panels form an accordion (i.e. only one at a time can open).</span>
+</p>
+
+
+<h2>simple panels</h2>
+
+
+<app-panel-simple title="Lorem <i>ipsum</i> dolor sit amet">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <code>nonumy</code> eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam <b>voluptua</b>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+</app-panel-simple>
+
+
+<app-panel-simple title="At vero eos et accusam">
+  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+  invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</app-panel-simple>
+
+
+<h2>fancy panels</h2>
+
+
+<app-panel>
+
+  <app-panel-header>
+    Lorem <i>ipsum</i> dolor sit <code>amet</code>
+  </app-panel-header>
+
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <code>nonumy</code> eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam <b>voluptua</b>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+</app-panel>
+
+
+<app-panel>
+
+  <app-panel-header>
+    At <i>vero</i> eos et accusam
+  </app-panel-header>
+
+  At vero eos et accusam et justo duo <code>dolores</code> et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+  invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+  <app-panel-footer>
+    May contain <b>nuts</b> or traces of nuts.
+  </app-panel-footer>
+
+</app-panel>
+
+
+<app-panel>
+  <app-panel-header></app-panel-header>
+  empty header
+</app-panel>
+
+
+<app-panel>
+  no header
+</app-panel>
+

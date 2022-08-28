@@ -1,0 +1,89 @@
+<app-doc [section]="'intro'"></app-doc>
+
+
+<!--####################################################################-->
+<app-doc [section]="'without accordion'"></app-doc>
+
+<app-panel>
+  <app-panel-header>A</app-panel-header>
+  A a a.
+</app-panel>
+
+<app-panel>
+  <app-panel-header><code>B</code></app-panel-header>
+  B b b.<br>
+  <code>B.b()</code>
+</app-panel>
+
+
+<!--####################################################################-->
+<app-doc [section]="'without button'"></app-doc>
+
+<div appAccordion [onlyOneOpen]="true">
+
+  <app-panel>
+    <app-panel-header>A</app-panel-header>
+    A a a.
+  </app-panel>
+
+  <app-panel>
+    <app-panel-header>B</app-panel-header>
+    B b b.
+  </app-panel>
+
+</div>
+
+
+<!--####################################################################-->
+<app-doc [section]="'with button'"></app-doc>
+
+<div appAccordion #foo="harmonica" [onlyOneOpen]="false">
+
+  <app-panel>
+    <app-panel-header>A</app-panel-header>
+    A a a.
+  </app-panel>
+
+  <app-panel>
+    <app-panel-header>B</app-panel-header>
+    B b b.
+  </app-panel>
+
+  <button type="button" (click)="foo.closeAll()">close</button>
+
+</div>
+
+
+<!--####################################################################-->
+<app-doc [section]="'nested'"></app-doc>
+
+<div appAccordion #outerAccordion="harmonica">
+
+  <app-panel>
+    <app-panel-header>A</app-panel-header>
+    A a a.
+  </app-panel>
+
+  <app-panel>
+    <app-panel-header>B with <i>nested</i> accordion</app-panel-header>
+    B b b.
+    <div appAccordion #nestedAccordion="harmonica" class="nested-accordion">
+      <app-panel>
+        <app-panel-header>C</app-panel-header>
+        C c c.
+      </app-panel>
+      <app-panel>
+        <app-panel-header>D</app-panel-header>
+        D d d.
+      </app-panel>
+      <app-panel>
+        <app-panel-header>E</app-panel-header>
+        E e e.
+      </app-panel>
+      <button type="button" (click)="nestedAccordion.closeAll()">close</button>
+    </div>
+  </app-panel>
+
+  <button type="button" (click)="outerAccordion.closeAll()">close</button>
+
+</div>

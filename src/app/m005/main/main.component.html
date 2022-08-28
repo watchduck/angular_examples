@@ -1,0 +1,22 @@
+<h1>big time picker and calendar</h1>
+
+<p>
+  Similar to the <a href="/#/4">last branch</a>, but big input and reset button are part of the time picker.
+</p>
+
+<p class="problem">
+  Same problem with too big typed values as in branches 3 and 4.
+</p>
+
+
+<h2>calendar</h2>
+
+<app-calendar></app-calendar>
+
+
+<h2>
+  single time picker
+  <span class="time">{{singleTimePicker.timeString}}</span>
+</h2>
+
+<app-time-picker #singleTimePicker [time]="'23:55:00'"></app-time-picker>

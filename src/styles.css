@@ -1,0 +1,64 @@
+p {
+  line-height: 130%;
+}
+
+body {
+  padding: 0 10px;
+}
+
+input, button {
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+code, pre, .place {
+  background-color: rgba(220, 220, 220, .6);
+  padding: 1px 2px;
+}
+
+.place {
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+kbd {
+  background-color: #eee;
+  border: 1px solid #888;
+  opacity: .8;
+  padding: 1px 3px;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+h2 {
+  padding-top: 5px;
+  border-top: 1px solid #aaa;
+}
+
+hr {
+  margin: 5px 0;
+  border-top: 1px solid #ccc;
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  opacity: .6;
+}
+
+.very-light {
+  opacity: .2;
+}
+
+p.problem, span.problem {
+  color: red;
+  opacity: .6;
+}
+
+.small {font-size: smaller;}
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}

@@ -1,0 +1,33 @@
+<h1>dynamic shape with dynamic color</h1>
+
+<p class="light">Extension of the last example in <a href="/#/16">branch 16</a>.</p>
+
+<table>
+  <tr>
+    <th>single</th>
+    <td></td>
+    <td class="middle"><div #containerSingle></div></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>add right</th>
+    <td class="left" colspan="2"><div #containerRight></div></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>add left</th>
+    <td></td>
+    <td class="right" colspan="2"><div #containerLeft></div></td>
+  </tr>
+</table>
+
+current color: <b class="color" [style]="{'text-decoration-color': colorValue}">{{colorName}}</b>
+&nbsp;
+next color:
+<button (click)="toggleColor()">{{nextColorName}}</button>
+
+<br>
+current shape: <b>{{shapeName}}</b>
+&nbsp;
+next shape:
+<button (click)="toggleShape()">{{nextShapeName}}</button>

@@ -1,0 +1,53 @@
+* {
+  --line-color: #1e421e;
+  --active-bg-color: #449544;
+  --passive-bg-color: #5dae5d;
+  --content-bg-color: #c9e4c9;
+}
+
+.stack {
+  width:100%;
+  display:inline-block;
+}
+
+.list-of-cards {
+  padding: 0;
+  border-bottom: 2px solid var(--line-color);
+  margin-bottom: 0;
+}
+
+.list-of-cards:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.tab {
+  background-color: var(--passive-bg-color);
+  border: 1px solid var(--line-color);
+  border-radius: 5px 5px 0 0;
+  margin-right: 3px;
+  float: left;
+  list-style: none;
+}
+
+.tab.active {
+  background-color: var(--active-bg-color);
+  cursor: default;
+  font-weight: bold;
+}
+
+.list-of-cards  a {
+  padding:8px 20px;
+  display:inline-block;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.stack-content {
+  border: 1px solid var(--line-color);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--content-bg-color);
+  margin: 0;
+  padding: 10px;
+}

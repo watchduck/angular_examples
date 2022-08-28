@@ -1,0 +1,24 @@
+<h1>time picker and calendar: two-way binding</h1>
+
+<p class="light">
+  Compare the <a href="/#/3">last branch</a> with one-way binding.
+  The <a href="/#/5">next one</a> is similar.
+</p>
+
+<p class="problem">
+  Same problem with too big typed values as in the last (and next) branch.
+</p>
+
+
+<h2>calendar</h2>
+
+<app-calendar></app-calendar>
+
+
+<h2>single time picker</h2>
+
+<app-time-picker #singleTimePicker [timeString]="'23:55:00'"></app-time-picker>
+<div style="display: block; clear: both;">
+  <button (click)="singleTimePicker.reset()">reset</button>
+  {{singleTimePicker.timeString}}
+</div>

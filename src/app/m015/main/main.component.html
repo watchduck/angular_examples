@@ -1,0 +1,52 @@
+<app-doc [section]="'intro'"></app-doc>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'default'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries"></app-blog-list>
+<app-blog-form (entryCreated)="saveEntry($event)"></app-blog-form>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom1'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+  <ng-template #customTemplate> ENTRY </ng-template>
+</app-blog-list>
+
+<app-blog-form (entryCreated)="saveEntry($event)">
+  <ng-template> FORM </ng-template>
+</app-blog-form>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom2'"></app-doc>
+
+
+<app-blog-list [entries]="listEntries">
+
+  <ng-template let-entry #customTemplate>
+    <b class="custom-title">{{entry.title}}</b>
+    <span class="custom-text">{{entry.text}}</span>
+  </ng-template>
+
+  <ng-template #additionTemplate>
+    There are {{listEntries.length}} entries.
+  </ng-template>
+
+</app-blog-list>
+
+<app-blog-form (entryCreated)="saveEntry($event)" #blogForm>
+  <ng-template>
+    <input type="text" placeholder="title" #titleInput/>
+    <input type="text" placeholder="text" #textInput/>
+    <input type="hidden" value="https://upload.wikimedia.org/wikipedia/commons/1/11/Blue-Speech-Bubble.png" #imageInput/>
+    <button (click)="blogForm.createEntry(titleInput.value, textInput.value, imageInput.value)">Create entry</button>
+  </ng-template>
+</app-blog-form>

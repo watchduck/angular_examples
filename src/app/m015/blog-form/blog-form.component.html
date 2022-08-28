@@ -1,0 +1,44 @@
+<div class="blog-form-wrapper">
+
+  <p class="hint">if not <code>custom</code>:</p>
+
+  <table *ngIf="!custom">
+    <tr>
+      <th>
+        <label for="title">Title:</label>
+      </th>
+      <td>
+        <input type="text" id="title" #titleInput/>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="text">Text:</label>
+      </th>
+      <td>
+        <textarea id="text" cols="20" rows="2" #textInput></textarea>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="title">Image URL:</label>
+      </th>
+      <td>
+        <input type="text" id="image" #imageInput/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="button-cell">
+        <button (click)="createEntry(titleInput.value, textInput.value, imageInput.value)">
+          Create entry
+        </button>
+      </td>
+    </tr>
+  </table>
+
+
+  <p class="hint">if <code>custom</code>:</p>
+
+  <ng-template *ngIf="custom" [ngTemplateOutlet]="custom"></ng-template>
+
+</div>

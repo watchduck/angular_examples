@@ -1,0 +1,33 @@
+<app-doc [section]="'intro'"></app-doc>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'default'"></app-doc>
+
+<app-blog-list [entries]="listEntries">
+  <ng-template></ng-template>
+</app-blog-list>
+
+
+
+<!--####################################################################-->
+<app-doc [section]="'custom'"></app-doc>
+
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>text</th>
+  </tr>
+  <app-blog-list [entries]="listEntries">
+
+    <ng-template let-entry #customTemplate>
+      <tr>
+        <td>{{entry.title}}</td>
+        <td>{{entry.text}}</td>
+      </tr>
+    </ng-template>
+
+  </app-blog-list>
+</table>

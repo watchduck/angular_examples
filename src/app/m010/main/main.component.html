@@ -1,0 +1,16 @@
+<h1>lower case directive</h1>
+
+<app-doc></app-doc>
+
+<h2>enter name</h2>
+
+<input #nameInput appLowerCase>
+
+<button type="button" (click)="addToNames(nameInput.value)">add to list</button>
+
+
+<h2 [class.very-light]="names.length == 0">list of names</h2>
+
+<ul>
+  <li *ngFor="let name of names">{{name}}</li>
+</ul>

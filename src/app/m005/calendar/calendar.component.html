@@ -1,0 +1,11 @@
+<div class="calendar">
+
+  <div *ngFor="let entry of entries" class="calendar-entry-wrapper">
+
+    <h2>{{entry.name}} <span class="time">{{entry.timeString}}</span></h2>
+
+    <app-time-picker [(time)]="entry.timeString"></app-time-picker>
+
+  </div>
+
+</div>

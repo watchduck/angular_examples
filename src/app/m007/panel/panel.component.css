@@ -1,0 +1,47 @@
+.panel {
+  background-color: #c9e4c9;
+  border: 1px solid #1e421e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom: -1px;
+}
+
+.header {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #4ca64c;
+  cursor: pointer;
+}
+
+.header {
+  font-weight: 700;
+}
+
+.arrow {
+  color: #1e421e;
+  position: absolute;
+  right: 10px;
+}
+
+.body {
+  margin: 10px
+}
+
+/* nested panels */
+::ng-deep .nested-accordion {
+  margin-top: 15px;
+  border: 1px solid #ffa500;
+  border-radius: 5px;
+  padding: 5px;
+}
+.panel .panel {
+  background-color: #ffdb99;
+  border: 1px solid #7f5200;
+}
+.panel .panel .header {
+  background-color: #ffa500;
+}
+.panel .panel .header .arrow {
+  color: #7f5200;
+}

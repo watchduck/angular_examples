@@ -1,0 +1,26 @@
+<h1>time picker and calendar: one-way binding</h1>
+
+<p>
+  The calendar has beige, and the time picker has red background.
+</p>
+<p class="light">
+  Compare the <a href="/#/4">next branch</a> with two-way binding.
+</p>
+<p class="problem">
+  Too big numbers in the calendar input are not consistently replaced by modulo values.<br>
+  When a different input is focused instead, the big value will usually remain in the input. (99 seconds visible in input, but 39 below.)
+</p>
+
+
+<h2>calendar</h2>
+
+<app-calendar></app-calendar>
+
+
+<h2>single time picker</h2>
+
+<app-time-picker #singleTimePicker [timeString]="'23:55:00'"></app-time-picker>
+<div style="display: block; clear: both;">
+  <button (click)="singleTimePicker.reset()">reset</button>
+  {{singleTimePicker.timeString}}
+</div>

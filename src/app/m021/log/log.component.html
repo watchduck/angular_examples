@@ -1,0 +1,23 @@
+<div id="log-viewer">
+
+  <button (click)="refresh()" class="refresh">refresh</button>
+  <button (click)="start()" [disabled]="autoRefresh">start</button>
+  <button (click)="stop()" [disabled]="!autoRefresh">stop</button>
+  <span>
+    Auto refresh is
+    <ng-container [ngSwitch]="autoRefresh">
+      <ng-container *ngSwitchCase="true">on</ng-container>
+      <ng-container *ngSwitchCase="false">off</ng-container>
+    </ng-container>.
+  </span>
+
+
+  <div id="logs">
+    <ul>
+      <li *ngFor="let log of logs">
+        {{log}}
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,353 @@
+<img id="app-icon" src="assets/images/app_icon.svg" alt="Æ" >
+<a id="github-link" href="https://github.com/watchduck/angular_examples">
+  <img src="assets/images/github_icon.svg" alt="GitHub">
+</a>
+<h1>Angular Examples</h1>
+
+<p>
+  This page is a collection of small apps, which are based on the examples in the
+  <a href="https://www.rheinwerk-verlag.de/angular-das-umfassende-handbuch/">Angular book by Christoph Höller</a>
+  &nbsp;<small>(3rd edition, 2022)</small>.<br>
+  It is built in development mode, and can be inspected in the browser.
+</p>
+
+<dash-entry [number]="0">
+  <dash-header>
+    dashboard
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@Directive</li>
+    <li class="children">@ContentChild</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="1">
+  <dash-header>
+    input decorator and optional property
+  </dash-header>
+
+  <ul class="inventory">
+    <li>constructor</li>
+    <li class="model"><small>model class</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="2">
+  <dash-header>
+    number input and variable
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li>$event</li>
+    <li>ngModel</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="3">
+  <dash-header>
+    time picker and calendar: one-way binding
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li>@Output</li>
+    <li>EventEmitter</li>
+    <li>constructor</li>
+    <li class="lifecycle-hook">OnChanges</li>
+    <li class="children">@ViewChild</li>
+    <li class="model"><small>model interface</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="4">
+  <dash-header>
+    time picker and calendar: two-way binding
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li>@Output</li>
+    <li>EventEmitter</li>
+    <li>constructor</li>
+    <li class="lifecycle-hook">OnChanges</li>
+    <li class="children">@ViewChild</li>
+    <li>ngModel</li>
+    <li class="model"><small>model interface</small></li>
+    <li><small>name magic</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="5">
+  <dash-header>
+    big time picker and calendar
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li>constructor</li>
+    <li>$event</li>
+    <li class="model"><small>model interface</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="6">
+  <dash-header>
+    content insertion: panels <small>(but no accordion)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@Directive</li>
+    <li class="children">@ContentChild</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="7">
+  <dash-header>
+    content insertion: panels with accordion
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@NgModule</li>
+    <li class="children">@ContentChildren</li>
+    <li>QueryList</li>
+    <li class="lifecycle-hook">AfterContentInit</li>
+    <li>@Output</li>
+    <li>EventEmitter</li>
+    <li>@Directive</li>
+    <li class="children">@ContentChild</li>
+    <li>exportAs</li>
+    <li>ng-deep</li>
+    <li>ViewEncapsulation</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="8">
+  <dash-header>
+    content insertion: tabs
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="lifecycle-hook">AfterContentInit</li>
+    <li class="children">@ContentChildren</li>
+    <li>QueryList</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="9">
+  <dash-header>
+    border directive
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="serif">constructor <small>with argument only</small></li>
+    <li class="lifecycle-hook">OnChanges</li>
+    <li class="ref">ElementRef</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="10">
+  <dash-header>
+    lower case directive
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li>@Directive</li>
+    <li class="children">@HostBinding</li>
+    <li class="children">@HostListener</li>
+    <li>$event</li>
+    <li><small>named anon fun</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="11">
+  <dash-header>
+    slider directive <small>(jQuery UI)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@Directive</li>
+    <li>@Output</li>
+    <li>constructor <small>with argument</small></li>
+    <li class="ref">ElementRef</li>
+    <li class="lifecycle-hook">OnChanges</li>
+    <li>EventEmitter</li>
+    <li>ngModel</li>
+    <li><small>name magic</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="12">
+  <dash-header>
+    draggable directive <small>(jQuery UI)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@Directive</li>
+    <li>constructor <small>with argument only</small></li>
+    <li class="ref">ElementRef</li>
+    <li class="lifecycle-hook">OnInit</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="13">
+  <dash-header>
+    <code>TemplateRef</code> and <code>NgTemplateOutlet</code>: blog <small>(static)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="children">@ContentChild</li>
+    <li>constructor</li>
+    <li class="ref">TemplateRef</li>
+    <li class="ref"><small>template input variable</small></li>
+    <li>ngForOf</li>
+    <li>ngForTemplate</li>
+    <li>ngTemplateOutlet</li>
+    <li class="model"><small>model class with constructor</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="14">
+  <dash-header>
+    <code>TemplateRef</code> fails in <code>table</code>
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li class="children">@ContentChild</li>
+    <li>constructor</li>
+    <li class="ref">TemplateRef</li>
+    <li class="ref"><small>template input variable</small></li>
+    <li>ngForOf</li>
+    <li>ngForTemplate</li>
+    <li class="model"><small>model class with constructor</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="15">
+  <dash-header>
+    <code>TemplateRef</code> and <code>NgTemplateOutlet</code>: blog <small>(with form)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="children">@ContentChild</li>
+    <li>constructor</li>
+    <li class="ref">TemplateRef</li>
+    <li class="ref"><small>template input variable</small></li>
+    <li>ngForOf</li>
+    <li>ngForTemplate</li>
+    <li>ngTemplateOutlet</li>
+    <li class="model"><small>model class with constructor</small></li>
+    <li>EventEmitter</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="16">
+  <dash-header>
+    <code>ViewContainerRef</code> (circles)
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li class="children">@ViewChild</li>
+    <li class="ref">ViewContainerRef</li>
+    <li class="lifecycle-hook">AfterViewInit</li>
+    <li>ngComponentOutlet</li>
+    <li>setTimeout</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="17">
+  <dash-header>
+    structural directive (repeater)
+  </dash-header>
+
+  <ul class="inventory">
+    <li>@Directive</li>
+    <li>createEmbeddedView</li>
+    <li class="serif">constructor <small>with argument only</small></li>
+    <li class="ref">TemplateRef</li>
+    <li class="ref">ViewContainerRef</li>
+    <li class="lifecycle-hook">OnInit</li>
+    <li>ngModel</li>
+    <li><small>named anon fun</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="18">
+  <dash-header>
+    <code>ViewContainerRef</code> (circles)
+  </dash-header>
+
+  <ul class="inventory">
+    <li>constructor</li>
+    <li class="children">@ViewChild</li>
+    <li class="ref">ViewContainerRef</li>
+    <li>setTimeout</li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="19">
+  <dash-header>
+    contact list <small>(with too many checks)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="lifecycle-hook">OnChanges</li>
+    <li class="lifecycle-hook">AfterViewChecked</li>
+    <li>EventEmitter</li>
+    <li>constructor <small>with argument</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="20">
+  <dash-header>
+    contact list <small>(optimized with <code>OnPush</code>)</small>
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="lifecycle-hook">OnChanges</li>
+    <li class="lifecycle-hook">AfterViewChecked</li>
+    <li>EventEmitter</li>
+    <li>ChangeDetectorRef</li>
+    <li>Observable</li>
+    <li>ReplaySubject</li>
+    <li>constructor <small>with argument</small></li>
+  </ul>
+</dash-entry>
+
+
+<dash-entry [number]="21">
+  <dash-header>
+    log viewer
+  </dash-header>
+
+  <ul class="inventory">
+    <li class="problem">problem</li>
+    <li class="lifecycle-hook">OnInit</li>
+    <li>ChangeDetectorRef</li>
+    <li>constructor <small>with argument</small></li>
+  </ul>
+</dash-entry>

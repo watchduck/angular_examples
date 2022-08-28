@@ -1,0 +1,39 @@
+<div *ngIf="section == 'intro'">
+  <h1>content insertion: panels with accordion</h1>
+  <p class="light">
+    <span>In the <a href="/#/6">last branch</a> are panels without accordion.</span>
+  </p>
+  <p>
+    Here the container is a <code>div</code> with a directive (accordion around panels).
+    <span class="light">In the <a href="/#/8">next branch</a> it is a component (stack around cards).</span>
+  </p>
+</div>
+
+
+
+<div *ngIf="section == 'without accordion'">
+  <h2>without accordion</h2>
+</div>
+
+
+<div *ngIf="section == 'without button'">
+  <h2>accordion</h2>
+  <p>Only one panel can be open at a time.</p>
+</div>
+
+
+<div *ngIf="section == 'with button'">
+  <h2>accordion with close button</h2>
+  <p>
+    <code>onlyOneOpen</code> is <code>false</code>, so many panels can be open at a time.<br>
+    The functionality provided by the accordion is the close button.
+  </p>
+</div>
+
+
+<div *ngIf="section == 'nested'">
+  <h2>nested accordions</h2>
+  <p>
+    <code>onlyOneOpen</code> is not used and defaults to <code>false</code>.
+  </p>
+</div>

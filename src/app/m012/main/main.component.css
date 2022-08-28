@@ -1,0 +1,13 @@
+.box {
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+
+#first-box {
+  background-color: #c9e4c9;
+}
+
+#second-box {
+  background-color: #dcd1c6;
+}

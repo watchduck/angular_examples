@@ -1,0 +1,60 @@
+<div class="container">
+
+
+  <div class="part small-part">
+
+    <div class="col hours">
+      <button on-click="smallClickChangeTime('hours', 1)">+</button>
+      <input #hoursInput
+             [value]="timeStrings?.hours"
+             (change)="smallInputChangeTime('hours', $event)"
+             (keydown.arrowUp)="smallClickChangeTime('hours', 1); $event.preventDefault()"
+             (keydown.arrowDown)="smallClickChangeTime('hours', -1); $event.preventDefault()"
+             (keydown.tab)="minutesInput.focus(); $event.preventDefault()"
+      />
+      <button (click)="smallClickChangeTime('hours', -1)">&minus;</button>
+    </div>
+
+    <div class="col minutes">
+      <button (click)="smallClickChangeTime('minutes', 1)">+</button>
+      <input #minutesInput
+             [value]="timeStrings?.minutes"
+             (change)="smallInputChangeTime('minutes', $event)"
+             (keydown.arrowUp)="smallClickChangeTime('minutes', 1); $event.preventDefault()"
+             (keydown.arrowDown)="smallClickChangeTime('minutes', -1); $event.preventDefault()"
+             (keydown.tab)="secondsInput.focus(); $event.preventDefault()"
+      />
+      <button (click)="smallClickChangeTime('minutes', -1)">&minus;</button>
+    </div>
+
+    <div class="col seconds">
+      <button (click)="smallClickChangeTime('seconds', 1)">+</button>
+      <input #secondsInput
+             [value]="timeStrings?.seconds"
+             (change)="smallInputChangeTime('seconds', $event)"
+             (keydown.arrowUp)="smallClickChangeTime('seconds', 1); $event.preventDefault()"
+             (keydown.arrowDown)="smallClickChangeTime('seconds', -1); $event.preventDefault()"
+             (keydown.tab)="hoursInput.focus(); $event.preventDefault()"
+      />
+      <button (click)="smallClickChangeTime('seconds', -1)">&minus;</button>
+    </div>
+
+  </div>
+
+
+  <div class="part big-part">
+
+    <button (click)="bigClickChangeTime(1)">+</button>
+    <input [value]="timeString"
+           (change)="bigInputChangeTime($event)"
+           (keydown.arrowUp)="bigClickChangeTime(1); $event.preventDefault()"
+           (keydown.arrowDown)="bigClickChangeTime(-1); $event.preventDefault()"
+    />
+    <button (click)="bigClickChangeTime(-1)">&minus;</button>
+
+  </div>
+
+  <button class="reset" type="button" (click)="reset()">reset</button>
+
+
+</div>

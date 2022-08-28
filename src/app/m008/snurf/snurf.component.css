@@ -1,0 +1,12 @@
+.snurf {
+  background-color: beige;
+  border: 1px solid sandybrown;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.caption {
+  color: gray;
+  margin-right: 5px;
+}

@@ -1,0 +1,74 @@
+<!--####################################################################-->
+<app-doc [section]="'intro'"></app-doc>
+
+
+<!--####################################################################-->
+<app-doc [section]="'a'"></app-doc>
+
+<input type="number"
+       [value]="a"
+       (change)="changeA($event)"
+       (keydown.i)="incrementA()"
+       (keyup.r)="resetA()"
+>
+
+<button type="button" (click)="incrementA()">increment</button>
+<button type="button" (click)="resetA()">reset</button>
+
+{{a}}
+
+
+<!--####################################################################-->
+<app-doc [section]="'b'"></app-doc>
+
+<input [value]="b"
+       (change)="changeB($event)"
+       (keydown.arrowUp)="incrementB()"
+       (keydown.arrowDown)="decrementB()"
+>
+
+<button type="button" (click)="incrementB()">increment</button>
+<button type="button" (click)="decrementB()">decrement</button>
+<button type="button" (click)="resetB()">reset</button>
+
+{{b}}
+
+
+<!--####################################################################-->
+<app-doc [section]="'c'"></app-doc>
+
+<input #inputC
+       type="number"
+       [(ngModel)]="c"
+>
+
+{{c}}
+
+
+<!--####################################################################-->
+<app-doc [section]="'d'"></app-doc>
+
+<input #inputD
+       type="number"
+       [(ngModel)]="d"
+       (keydown.arrowUp)="inputC.focus();"
+       (keydown.arrowDown)="inputE.focus(); $event.preventDefault()"
+       (keydown.r)="resetD()"
+>
+
+{{d}}
+
+
+<!--####################################################################-->
+<app-doc [section]="'e'"></app-doc>
+
+<input #inputE
+       type="number"
+       [ngModel]="e"
+       (ngModelChange)="e = $event"
+       (keydown.control.arrowUp)="inputD.focus();"
+>
+
+{{e}}
+
+

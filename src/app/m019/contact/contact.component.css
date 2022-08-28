@@ -1,0 +1,11 @@
+div {
+  border: 3px solid #f1b683;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+label {
+  color: #d8a375;
+  font-weight: bold;
+}

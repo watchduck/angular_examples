@@ -1,0 +1,13 @@
+table {
+  border: 3px solid lightgray;
+}
+th {
+  border: 1px solid brown;
+  color: brown;
+  padding: 2px 5px;
+}
+td {
+  border: 1px solid blue;
+  color: blue;
+  padding: 2px 5px;
+}

@@ -1,0 +1,19 @@
+<div class="stack">
+
+  <ul class="list-of-cards">
+
+    <li class="tab"
+        *ngFor="let card of listOfCards"
+        [class.active]="card.active"
+        (click)="activate(card)"
+    >
+      <a>{{card.title}}</a>
+    </li>
+
+  </ul>
+
+  <div class="stack-content">
+    <ng-content></ng-content>
+  </div>
+
+</div>

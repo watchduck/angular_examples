@@ -1,0 +1,21 @@
+<h1>slider directive <small>(jQuery UI)</small></h1>
+
+
+<div class="box" id="first-box">
+  <div appSlider [(value)]="firstValue"></div>
+  <input type="number" [(ngModel)]="firstValue">
+  The first value is <b>{{firstValue}}</b>.
+</div>
+
+
+<div class="box" id="second-box">
+  <div appSlider [(value)]="secondValue"></div>
+  <input type="number" [(ngModel)]="secondValue">
+  The second value is <b>{{secondValue}}</b>.
+</div>
+
+
+<p>
+  Each slider can be used to represent and enter values from 0 to 100.<br>
+  The input can be used to enter any number, and the slider will represent the closest one.<br>
+</p>

@@ -1,0 +1,23 @@
+<div class="blog-list-wrapper">
+
+
+  <p class="hint">if not <code>custom</code>:</p>
+
+  <div class="blog-list" *ngIf="!custom">
+    <app-blog-entry [entry]="entry" *ngFor="let entry of entries"></app-blog-entry>
+  </div>
+
+
+  <p class="hint">if <code>custom</code>:</p>
+
+  <div class="blog-list-custom" *ngIf="custom">
+    <ng-template ngFor [ngForOf]="entries" [ngForTemplate]="custom"></ng-template>
+  </div>
+
+
+  <p class="hint">if <code>addition</code>:</p>
+
+  <ng-template *ngIf="addition" [ngTemplateOutlet]="addition"></ng-template>
+
+
+</div>

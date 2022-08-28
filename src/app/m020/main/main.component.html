@@ -1,0 +1,31 @@
+<h1>contact list <small>(optimized with <code>OnPush</code>)</small></h1>
+
+<p>
+  Like the <a href="/#/19">last branch</a>, but only with necessary checks (as can be seen in the console).
+</p>
+
+<app-list [contacts]="contacts"
+          (onSelect)="selectContact2($event)"
+></app-list>
+
+<app-counter [contacts]="contactsObservable"></app-counter>
+
+<form>
+
+  <label>name:</label>
+  <input type="text" name="something" [(ngModel)]="contactName">
+  <span class="input-text">{{contactName}}</span><br>
+
+  <label>address:</label>
+  <input type="text" name="whatever" [(ngModel)]="contactAddress">
+  <span class="input-text">{{contactAddress}}</span><br>
+
+  <button (click)="updateSelectedContact()"
+          [disabled]="noContactSelected() || fieldsAreEmpty()"
+  >update selected</button>
+
+  <button (click)="createContact()"
+          [disabled]="fieldsAreEmpty()"
+  >create new</button>
+
+</form>

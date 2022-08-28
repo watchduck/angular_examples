@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 242.64361 260.25628"
+   version="1.1"
+   sodipodi:docname="NgEx_icon.svg"
+   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
+   width="242.64362"
+   height="260.25629"
+   inkscape:export-filename="../a1f8428d/favicon.png"
+   inkscape:export-xdpi="8.6039038"
+   inkscape:export-ydpi="8.6039038"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview159"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.161116"
+     inkscape:cx="153.80489"
+     inkscape:cy="110.30695"
+     inkscape:window-width="3440"
+     inkscape:window-height="1403"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs150">
+    <style
+       id="style148">.cls-1{fill:#dd0031;}.cls-2{fill:#c3002f;}.cls-3{fill:#fff;}</style>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="background"
+     style="display:inline"
+     transform="translate(-407.89331,-71.886505)"
+     sodipodi:insensitive="true">
+    <g
+       id="g1144"
+       transform="matrix(1.2762815,0,0.08925696,1.2762815,364.03889,36.09806)"
+       style="stroke-width:0.783527">
+      <polygon
+         class="st0"
+         points="46.1,186.3 125,230 203.9,186.3 218.1,63.2 125,30 31.9,63.2 "
+         id="polygon1009"
+         style="fill:#fe7a2d;fill-opacity:1;stroke-width:0.783527" />
+      <polygon
+         class="st1"
+         points="218.1,63.2 125,30 125,52.2 125,52.1 125,153.4 125,230 203.9,186.3 "
+         id="polygon1011"
+         style="fill:#fe502d;fill-opacity:1;stroke-width:0.783527" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="letter"
+     transform="translate(-407.89331,-71.886505)">
+    <path
+       id="path378"
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 529.09839 115.08963 L 451.39331 264.1326 L 475.8562 264.1326 L 497.34643 222.90408 L 501.15893 221.18338 C 512.31681 216.1454 523.86383 212.08957 535.66675 209.02322 L 539.52222 264.1326 L 550.39136 264.1326 L 550.42847 264.1326 L 611.43042 264.1326 L 609.90893 242.36697 L 561.78589 242.36697 L 561.77612 242.2283 L 559.12378 204.32596 C 564.3222 203.5755 569.54633 202.97652 574.79956 202.60916 L 585.1687 201.8826 L 583.71753 181.14432 L 573.34839 181.86893 C 568.09736 182.23612 562.87241 182.81772 557.67065 183.53494 L 554.40503 136.8533 L 602.53003 136.8533 L 601.00854 115.08963 L 540.00659 115.08963 L 539.96948 115.08963 L 529.09839 115.08963 z M 531.99097 156.44119 L 534.19604 187.96072 C 526.76511 189.76199 519.41842 191.91218 512.19018 194.42752 L 531.99097 156.44119 z " />
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<div class="panel">
+
+  <div class="header" (click)="toggle()">
+    <span class="title" *ngIf="hasHeader()">
+      <ng-content select="app-panel-header"></ng-content>
+    </span>
+    <span class="dummy-title" *ngIf="!hasHeader()">&nbsp;</span>
+    <span class="arrow">{{ open ? '&#9660;' : '&#9668;'}}</span>
+  </div>
+
+  <div class="body" *ngIf="open">
+    <ng-content></ng-content>
+  </div>
+
+</div>
